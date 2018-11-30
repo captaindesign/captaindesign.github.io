@@ -40,7 +40,7 @@
   function Parallax(element, options) {
     var self = this;
 
-    if (typeof options == 'object') {
+    if (typeof options === 'object') {
       delete options.refresh;
       delete options.render;
       $.extend(this, options);
@@ -57,16 +57,16 @@
     if (positions.length < 1) {
       positions.push('center');
     }
-    if (positions.length == 1) {
+    if (positions.length === 1) {
       positions.push(positions[0]);
     }
 
-    if (positions[0] == 'top' || positions[0] == 'bottom' || positions[1] == 'left' || positions[1] == 'right') {
+    if (positions[0] === 'top' || positions[0] === 'bottom' || positions[1] === 'left' || positions[1] === 'right') {
       positions = [positions[1], positions[0]];
     }
 
-    if (this.positionX != undefined) positions[0] = this.positionX.toLowerCase();
-    if (this.positionY != undefined) positions[1] = this.positionY.toLowerCase();
+    if (this.positionX !== undefined) positions[0] = this.positionX.toLowerCase();
+    if (this.positionY !== undefined) positions[1] = this.positionY.toLowerCase();
 
     self.positionX = positions[0];
     self.positionY = positions[1];
@@ -179,9 +179,9 @@
 
         var margin = this.imageWidth - this.boxWidth;
 
-        if (this.positionX == 'left') {
+        if (this.positionX === 'left') {
           this.offsetLeft = 0;
-        } else if (this.positionX == 'right') {
+        } else if (this.positionX === 'right') {
           this.offsetLeft = - margin;
         } else if (!isNaN(this.positionX)) {
           this.offsetLeft = Math.max(this.positionX, - margin);
@@ -195,9 +195,9 @@
 
         var margin = this.imageHeight - imageHeightMin;
 
-        if (this.positionY == 'top') {
+        if (this.positionY === 'top') {
           this.offsetBaseTop = imageOffsetMin;
-        } else if (this.positionY == 'bottom') {
+        } else if (this.positionY === 'bottom') {
           this.offsetBaseTop = imageOffsetMin - margin;
         } else if (!isNaN(this.positionY)) {
           this.offsetBaseTop = imageOffsetMin + Math.max(this.positionY, - margin);
@@ -251,7 +251,7 @@
     scrollLeft:   0,
     winHeight:    0,
     winWidth:     0,
-    docHeight:    1 << 30,
+    docHeight:    1 < 30,
     docWidth:     1 << 30,
     sliders:      [],
     isReady:      false,
@@ -284,7 +284,7 @@
     },
 
     configure: function(options) {
-      if (typeof options == 'object') {
+      if (typeof options === 'object') {
         delete options.refresh;
         delete options.render;
         $.extend(this.prototype, options);
@@ -292,13 +292,13 @@
     },
 
     refresh: function() {
-      $.each(this.sliders, function(){ this.refresh() });
+      $.each(this.sliders, function(){ this.refresh(); });
       this.isFresh = true;
     },
 
     render: function() {
       this.isFresh || this.refresh();
-      $.each(this.sliders, function(){ this.render() });
+      $.each(this.sliders, function(){ this.render(); });
     },
 
     requestRender: function() {
@@ -320,20 +320,20 @@
   function Plugin(option) {
     return this.each(function () {
       var $this = $(this);
-      var options = typeof option == 'object' && option;
+      var options = typeof option === 'object' && option;
 
-      if (this == window || this == document || $this.is('body')) {
+      if (this === window || this === document || $this.is('body')) {
         Parallax.configure(options);
       }
       else if (!$this.data('px.parallax')) {
         options = $.extend({}, $this.data(), options);
         $this.data('px.parallax', new Parallax(this, options));
       }
-      if (typeof option == 'string') {
+      if (typeof option === 'string') {
         Parallax[option]();
       }
     })
-  };
+;  }
 
   var old = $.fn.parallax;
 
