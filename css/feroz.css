@@ -67,7 +67,7 @@ a:hover{color:#ceff00;}
   border: 0;
   }
 #fondo2{background-image: url(../imgs/fondito2.gif); background-size: cover;}
-#fondo3{background-image: url(../imgs/../imgs/about.png.gif); background-size: cover;}
+#fondo3{background-image: url(../imgs/about.png.gif); background-size: cover;}
 /*FIN CARROUSEL*/
 #datos{text-align:right; position:absolute; color:#fff; bottom:20px; right:20px;
 }
