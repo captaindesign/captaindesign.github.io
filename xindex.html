@@ -1,316 +1,179 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>C A P T A I N</title>
-<link href="css/feroz.css" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,300italic,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Somos un estudio brutal, curioso y audaz.<br>
+	<title>love based design</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="captain design - portfolio">
+	<meta name="keywords" content="portfolio, onepage, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
 
-En nuestro mundo feroz habita el diseño, la animación, la ilustración, la dirección de arte y sobre todo las ideas. En cada uno de nuestros proyectos, dejamos salir toda esa energía creadora que surge de nuestra experiencia y de lo que nos rodea; porque somos depredadores, y todo nos inspira. Así llegamos siempre a una feroz combinación entre concepto y forma, en cada trabajo que realizamos.
-">
-<link rel="icon" type="image/png" href="favicon.png">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
 
-		<link rel="stylesheet" type="text/css" href="css/set2.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  
-<script src="parallax/parallax.js"></script>     
-<script>
-$(document).ready(function(){
-  $(".business").click(function(){
-    $(".hiddenlinks").slideToggle();
-  });
-});
-</script>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
 </head>
-
 <body>
-<div id="black"></div> 
-       
- <div id="hola" class="playfair">
- <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="1100px" height="150px" viewBox="0 0 1100 100">
-<style type="text/css">
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
 
-<![CDATA[
-
-	text {
-		filter: url(#filter);
-		fill:#00FF78;
-    	
-    	font-size: 100px;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale; 
-     		}
-]]>
-</style>
-	<defs>
-
-		<filter id="filter">
-		    <feFlood flood-color="rgba(0,0,0,0.01)" result="black" />
-		    <feFlood flood-color="red" result="flood1" />
-		    <feFlood flood-color="limegreen" result="flood2" />
-			<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
-			<feOffset in="SourceGraphic" dx="2" dy="0" result="off1b"/>
-			<feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a"/>
-			<feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b"/>
-		    <feComposite in="flood1" in2="off1a" operator="in"  result="comp1" />
-		    <feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
-
- 		  	<feMerge x="0" width="100%" result="merge1">
-				<feMergeNode in = "black" />
-				<feMergeNode in = "comp1" />
-				<feMergeNode in = "off1b" />
-
-				<animate 
-					attributeName="y" 
-		    		id = "y"
-		    		dur ="4s"
-		    		
-		    		values = '104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
-
-		    		keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
-
-		    		repeatCount = "indefinite" />
- 
-				<animate attributeName="height" 
-		    		id = "h" 
-		    		dur ="4s"
-		    		
-		    		values = '10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
-
-		    		keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
-
-		    		repeatCount = "indefinite" />
-		    </feMerge>
- 			
-
- 			<feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
-				<feMergeNode in = "black" />
-				<feMergeNode in = "comp2" />
-				<feMergeNode in = "off2b" />
-
-				<animate attributeName="y" 
-		    		id = "y"
-		    		dur ="4s"
-		    		values = '103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;' 
-
-		    		keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1'
-
- 		    		repeatCount = "indefinite" />
- 
-				<animate attributeName="height" 
-		    		id = "h"
-		    		dur = "4s"
-					
-					values = '0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
-
-		    		keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
-		    		 
-		    		repeatCount = "indefinite" />
-		    </feMerge>
-			
-		 	<feMerge>
- 				<feMergeNode in="SourceGraphic" />	
-
-				<feMergeNode in="merge1" /> 
- 			<feMergeNode in="merge2" />
-
-		    </feMerge>
-	    </filter>
-
-	</defs>
-
-<g>
-	<text x="0" y="100">Graphic & Web designer</text>
-</g>
-</svg>
-</div>    
-<div class="rslides">
-  <li class="parallax-window" data-parallax="scroll" data-image-src="imgs/cover.png"></li>
-  <Xli class="parallax-window" data-parallax="scroll" data-image-src="imgs/web-22b.png"></li>
-</div>
-
-<nav>
-   	
-<div id="headermobile"><a href="javascript://" class="business"><div id="menu_phone"><img src="imgs/menu2.png"></div></a></div>
-       
-<div id="escondido">
-        <div class="hiddenlinks">
-    		<li><a href="index.html">home</a></li>
-       		<li><a href="index.html#work">work</a></li>
-        	<li><a href="index.html#about">about</a></li>
-        	<li><a href="index.html#contact">contacto</a></li>
-        </div>
-</div>
-        
-    	<ul>
-        	<li class="limargin"><a class="black" href="index.html">home</a></li>
-            <li class="limargin"><a class="black" href="index.html#work">work</a></li>
-            <li class="limargin"><a class="black" href="index.html#about">about</a></li>
-            <li class="limargin"><a class="black" href="index.html#contact">contacto</a></li>
-            <li><a href="https://www.behance.net/capitan" class="rollover3" target="_blank"></a></li>
-            <li><a href="https://www.facebook.com/venganzadelcapitan" class="rollover2" target="_blank"></a></li>
-            <li><a href="https://ar.linkedin.com/in/joselegato" class="rollover1" target="_blank"></a></li>
-        </ul>
-            
-</nav>
-
-<main>
-	<div class="grid">   
-                <!--1-->
-					<figure class="effect-jazz"><a name="work"></a> 
-						<img src="imgs/luthear/luthear.png"/>
-						<figcaption>
-							<h2 class="playfair">Luthear</h2>
-							<p class="bold">IDENTIDAD + WEB</p>
-							<a href="luthear.html">View more</a>
-						</figcaption>			
-					</figure>
-                   <!--2-->  
-					<figure class="effect-jazz" class="clear2">
-						<img src="imgs/converse/converse_th.jpg"/>
-						<figcaption>
-							<h2 class="playfair">Converse México</h2>
-							<p class="bold">ILUSTRACIONES</p>
-							<a href="proy_converse.html">View more</a>
-						</figcaption>			
-					</figure>
-                     <!--3-->
-                    <figure class="effect-jazz">
-						<img src="imgs/splash/splash_th.jpg" alt="img06"/>
-						<figcaption>
-							<h2 class="playfair">Splash</h2>
-							<p class="bold">DIRECCIÓN DE ARTE + DISEÑO</p>
-							<a href="proy_splash.html">View more</a>
-						</figcaption>			
-					</figure>
-                     <!--4-->
-                    <figure class="effect-jazz">
-						<img src="imgs/tropico/tropico_th.jpg" alt="img25"/>
-						<figcaption>
-							<h2 class="playfair">Trópico</h2>
-							<p class="bold">IDENTIDAD + FLYERS + VISUALES</p>
-							<a href="proy_tropico.html">View more</a>
-						</figcaption>			
-					</figure>
-                     <!--5-->
-                    <figure class="effect-jazz">
-						<img src="imgs/lemoon/lemoon_th.jpg" alt="img25"/>
-						<figcaption>
-							<h2 class="playfair">Lemoon Films</h2>
-							<p class="bold">IDENTIDAD</p>
-							<a href="proy_lemmon.html">View more</a>
-						</figcaption>			
-					</figure>
-                     <!--6-->
-					<figure class="effect-jazz" class="clear2">
-						<img src="imgs/pronto/pronto_th.jpg" alt="img06"/>
-						<figcaption>
-							<h2 class="playfair">Pronto <span class="italica">(Pitch)</span></h2>
-							<p class="bold">PACKAGING + BRANDING</p>
-							<a href="proy_pronto.html">View more</a>
-						</figcaption>			
-					</figure>
-                     <!--7-->
-                    <figure class="effect-jazz">
-						<img src="imgs/orale/orale_th.jpg" alt="img06"/>
-						<figcaption>
-							<h2 class="playfair">Orale Manito</h2>
-							<p class="bold">IDENTIDAD + ESTAMPAS</p>
-							<a href="proy_orale.html">View more</a>
-						</figcaption>			
-					</figure> 
-                     <!--8-->
-                    <figure class="effect-jazz" class="clear">
-						<img src="imgs/colonia/colonia_th.jpg" alt="img06"/>
-						<figcaption>
-							<h2 class="playfair">Guía Colonia</h2>
-							<p class="bold">ILUSTRACIÓN + DISEÑO</p>
-							<a href="proy_colonia.html">View more</a>
-						</figcaption>			
-					</figure>
-                    
-                    <!--9-->
-                    <figure class="effect-jazz">
-						<img src="imgs/bagley/bagley_th.jpg" alt="img25"/>
-						<figcaption>
-							<h2 class="playfair">Bagley</h2>
-							<p class="bold">ILUSTRACIONES</p>
-							<a href="proy_bagley.html">View more</a>
-						</figcaption>			
-					</figure>
-                     <!--10-->
-                    <figure class="effect-jazz">
-						<img src="imgs/limbo/limbo_th.jpg" alt="img25"/>
-						<figcaption>
-							<h2 class="playfair">Limbo</h2>
-							<p class="bold">IDENTIDAD + SISTEMA VISUAL</p>
-							<a href="proy_limbo.html">View more</a>
-						</figcaption>			
-					</figure>
-                     <!--11-->
-					<figure class="effect-jazz" class="clear2">
-						<img src="imgs/valbe/valbe_th.jpg" alt="img06"/>
-						<figcaption>
-							<h2 class="playfair">Valbé</h2>
-							<p class="bold">ARTE DE TAPA</p>
-							<a href="proy_valbe.html">View more</a>
-						</figcaption>			
-					</figure>
-                     <!--12-->
-                    <figure class="effect-jazz">
-						<img src="imgs/arcor/arcor_th.jpg" alt="img06"/>
-						<figcaption>
-							<h2 class="playfair">Arcor USA</h2>
-							<p class="bold">ILUSTRACIONES + PACKAGING</p>
-							<a href="proy_arcor.html">View more</a>
-						</figcaption>			
-					</figure> 
-                   
+	<!-- header section start -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-3">
+					<div class="logo">
+						<a href="index.html"><h2 class="site-logo">Captain Design</h2></a>
+					</div>
 				</div>
-</main>
+				<div class="col-lg-8 col-md-9">
+					<a href="contact.html" class="site-btn header-btn">Contact</a>
+					<nav class="main-menu">
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="cookieleles.html">Cookieleles</a></li>
+							<li><a href="http://behance.net/capitan" target="_blank">Design</a></li>
+							<li><a href="lutherie.html">Lutherie</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+	</header>
+	<!-- header section end -->
 
-<div id="somos"><a id="about"></a>
-<div class="parallax-window" data-parallax="scroll" data-image-src="imgs/joe2.jpg">
-    	<div id="col1">
-        	<div class="nombres">about me</div><br>
-            <div id="texto_big">           
-Diseñador arriesgado y espontáneo que disfruta de trabajar en identidades para proyectos independientes de la mano del trabajo manual y la ilustración. Cada proyecto nuevo es una aventura y mundo en si mismo donde poder encontrar cada elemento apropiado para su mejor difusión. 
-Diseñador gráfico egresado de la U.B.A. devenido en programador por la necesidad de abarcar la totalidad de los proyectos al encararlos de una manera orgánica y global. Donde cada detalle es tan importante como el conjunto.
+	<!-- intro section start -->
+	<section class="intro-section">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<h2 class="section-title">I’m a <span>Plant Based</span> graphic designer, involved in projects that takes care about the planet</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- intro section end -->
 
-		</div><br><br>
-            <div id="texto_small">We are a nosey, brutal, fearless studio. In our world inhabits the branding, animation, illustration, art direction and above all, the ideas. In each of our projects, we leave all that creative energy that comes from our experience and our surroundings; because we are predators, and everything inspires us . So we always arrive to a clever combination of concept and form, in each work we do.</div><br>
-<span style="font-size:.9em;">Buenos Aires, Argentina.</span>            
-        </div>
-        
- </div> 
+
+	<!-- portfolio section start -->
+	<section class="portfolio-section">
+		<div class="container">
+			<ul class="portfolio-filter controls">
+				<li class="control" data-filter="all">all</li>
+				<li class="control" data-filter=".music">music</li>
+				<li class="control" data-filter=".luthier">lutherie</li>
+				<li class="control" data-filter=".activism">activism</li>
+				<li class="control" data-filter=".design">graphic design</li>
+			</ul>
+		</div>                       
+		<div class="container-fluid p-md-0 ">
+			<div class="row portfolios-area">
+				<div class="mix col-lg-6 col-md-6 all">
+					<a href="about.html" class="portfolio-it set-bg" data-setbg="img/portfolio/1.jpg">
+						<div class="pi-inner">
+							<h2>i´m joe</h2>
+						</div>						
+					</a>
+				</div>
+				<div class="mix col-lg-6 col-md-6 design">
+					<a href="http://behance.net/capitan" target="_blank" class="portfolio-it set-bg" data-setbg="img/portfolio/2.gif">
+						<div class="pi-inner">
+							<h2>+ my portfolio</h2>
+						</div>						
+					</a>
+				</div>
+				<div class="mix col-lg-4 col-md-6 luthier">
+					<a href="lutherie.html" class="portfolio-it set-bg" data-setbg="img/portfolio/3.jpg">
+						<div class="pi-inner">
+							<h2>lutherie projects</h2>
+						</div>						
+					</a>
+				</div>
+				<div class="mix col-lg-4 col-md-6 luthier">
+					<a href="lutherie.html" class="portfolio-it set-bg" data-setbg="img/portfolio/4.jpg">
+						<div class="pi-inner">
+							<h2>lutherie projects</h2>
+						</div>						
+					</a>
+				</div>
+				<div class="mix col-lg-4 col-md-6 luthier">
+					<a href="cookieleles.html" class="portfolio-it set-bg" data-setbg="img/portfolio/5.jpg">
+						<div class="pi-inner">
+							<h2>+ cookieleles</h2>
+						</div>						
+					</a>
+				</div>
+				<div class="mix col-lg-12 col-md-6 music">
+					<a href="https://youtu.be/uxUB_iiX-Oo" target="_blank" class="portfolio-it set-bg" data-setbg="img/portfolio/6.jpg">
+						<div class="pi-inner">
+							<h2>+ Vietnam [videoclip]</h2>
+						</div>						
+					</a>
+				</div>
+				<div class="mix col-lg-6 col-md-6 music">
+					<a href="https://youtu.be/TndHANGRDV0" target="_blank" class="portfolio-it set-bg left" data-setbg="img/portfolio/77.jpg">
+						<div class="pi-inner">
+							<h2>+ Joe Venganza [band]</h2>
+						</div>						
+					</a>
+				</div>
+				<div class="mix col-lg-6 col-md-6 activism">
+					<a href="img/portfolio/8.jpg" class="portfolio-it set-bg" data-setbg="img/portfolio/8.jpg">
+						<div class="pi-inner">
+							<h2>+ Euro Tour [activism]</h2>
+						</div>						
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- portfolio section end -->
+
+
+	<!-- footer section start -->
+	<footer class="footer-section text-center">
+		<div class="container">
+			<h2 class="section-title mb-5">Let’s work together</h2>
+			<a href="contact.html" class="site-btn">Contact</a>
+			<div class="social-links">
+				<a href="http://behance.net/capitan"><span class="fa fa-behance"></span></a>
+				<a href="https://www.linkedin.com/in/joselegato/" target="_blank"><span class="fa fa-linkedin"></span></a>
+				<a href="http://www.youtube.com/c/joevenganzatube" target="_blank"><span class="fa fa-youtube-play"></span></a>
+				<a href="https://open.spotify.com/artist/0hNo7oGDA1KnyhLGThx2IB" target="_blank"><span class="fa fa-spotify"></span></a>
+				<a href="http://joevenganza.bandcamp.com" target="_blank"><span class="fa fa-bandcamp"></span></a>
+			</div>
+			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </div>
-<footer><a name="contact"></a>
-	
-    
-    <div id="left">
-        <img src="imgs/redes/contacto-07.png"><span class="mail">venganzadelcapitan@gmail.com</span>
-   </div>
-    
-    <div id="right">
-    	<ul>
-        	<li><a href="https://ar.linkedin.com/in/joselegato" target="_blank"><img src="imgs/redes/contacto-02.png"></a></li>
-            <li><a href="https://www.behance.net/capitan" target="_blank"><img src="imgs/redes/contacto-03.png"></a></li>
-            <li><a href="https://www.facebook.com/venganzadelcapitan" target="_blank"><img src="imgs/redes/contacto-04.png"></a></li>
-        </ul>
-    </div>
-   
-   <div id="redes">
-        <div id="fb"><a href="https://www.facebook.com/venganzadelcapitan" target="_blank"><img src="imgs/redes/contacto-04.png"></a></div>
-        <div id="bh"><a href="https://www.behance.net/capitan" target="_blank"><img src="imgs/redes/contacto-03.png"></a></div>
-        <div id="in"><a href="https://ar.linkedin.com/in/joselegato" target="_blank"><img src="imgs/redes/contacto-02.png"></a></div>
-        <div id="mail">venganzadelcapitan@gmail.com</div> 
-  </div>
-  
-    <span class="clear"></span>
-</footer>
+		</div>
+	</footer>
+	<!-- footer section end -->
 
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
