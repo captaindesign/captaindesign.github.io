@@ -455,6 +455,9 @@ ol {
 .left {
   background-position: left center;
 }
+.right {
+  background-position: right center;
+}
 .hide { display:block;
 background: rgba(0, 20, 24, 0.8);
 position: absolute; 
