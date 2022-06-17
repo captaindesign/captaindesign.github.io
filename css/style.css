@@ -1,4 +1,4 @@
-:hover/* =================================
+/* =================================
 ------------------------------------
   Riddle - Portfolio
   Version: 1.0
@@ -13,7 +13,7 @@ html,
 body {
   height: 100%;
   font-family: 'josefin sans', sans-serif;
-	max-width: 1440px;
+	max-width: 1340px;
 	margin: 0 auto;
 }
 h1,
@@ -50,7 +50,9 @@ button:focus,
 textarea:focus {
   outline: none;
 }
-
+a{
+color:lightskyblue;
+}
 a:hover,
 a:focus {
   text-decoration: none;
@@ -165,12 +167,12 @@ ol {
 .site-btn {
 	border-radius: 30px;
   display: inline-block;
-  font-size: 15px;
+  font-size: 1.1em;
   min-width: 140px;
   text-align: center;
   padding: 15px 10px;
   position: relative;
-  color:plum;
+  color:lightskyblue;
   border: none;
   background-color: #000;
   margin-right: 0;
@@ -398,7 +400,6 @@ ol {
   float: right;
   margin-right: 0;
 	font-weight: 500;
-	font-size: 1.1em;
 }
 
 .nav-switch {
