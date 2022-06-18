@@ -828,4 +828,7 @@ height: 100%; width: 100%; padding: 20px;
   .section-title {
     font-size: 30px;
   }
+	.portfolio-meta {
+  text-align: center;
+}
 }
