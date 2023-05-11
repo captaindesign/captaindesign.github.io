@@ -645,6 +645,7 @@ height: 100%; width: 100%; padding: 20px;
 .list{list-style: none;}
 .list li{float: left; width:33%; margin-bottom: 25px;}
 .carnet{border-radius: 20px;}
+.margintop{padding-top:20px;}
 /*------------------------
     Blog Page
 --------------------------*/
