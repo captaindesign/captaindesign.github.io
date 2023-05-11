@@ -12,7 +12,7 @@
 html,
 body {
   height: 100%;
-  font-family: 'josefin sans', sans-serif;
+  font-family: 'dm mono', sans-serif;
 	max-width: 1340px;
 	margin: 0 auto;
 }
@@ -24,16 +24,17 @@ h5,
 h6 {
   color: #001418;
   margin: 0;
-  font-weight: 600;
-  font-family: 'josefin sans', sans-serif;
+  font-family: 'dm mono', sans-serif;
 }
 
 p {
   font-size: 19px;
   color: #979797;
   line-height: 1.5;
+	font-family: 'DM mono', sans-serif;
 }
-p span{ color: plum;}
+.texto{font-family: 'josefin sans', sans-serif;}
+p span{ color:darkseagreen;}
 .regular{font-weight: 300;}
 img {
   max-width:100%;
@@ -52,6 +53,7 @@ textarea:focus {
 }
 a{
 color:lightskyblue;
+	
 }
 a:hover,
 a:focus {
@@ -64,7 +66,6 @@ ol {
   padding: 0;
   margin: 0 auto;
 }
-
 /*------------------------
   Helper css
 --------------------------*/
@@ -92,11 +93,11 @@ ol {
 }
 
 .section-title {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .section-title span {
-  color:plum;
+  color:darkseagreen;
 }
 .sub{text-decoration-line: underline}
 /*------------------------
@@ -167,18 +168,17 @@ ol {
 .site-btn {
 	border-radius: 30px;
   display: inline-block;
-  font-size: 1.1em;
+  font-size: .9em;
   min-width: 140px;
   text-align: center;
   padding: 15px 10px;
   position: relative;
-  color:lightskyblue;
+  color:white;
   border: none;
-  background-color: #000;
+  background-color: orange;
   margin-right: 0;
   z-index: 1;
 }
-
 .site-btn.btn-fade {
   background-color: #979797;
 }
@@ -206,7 +206,8 @@ ol {
 }
 
 .site-btn:hover {
-  color: #fff;
+  background-color:darkorange;
+	color:lemonchiffon;
 }
 
 /*===  Accordion  ===*/
@@ -371,12 +372,13 @@ ol {
   padding-top: 30px;
   padding-bottom: 20px;
   position: relative;
+	margin:0 auto;
 }
 
 .site-logo {
   font-size: 24px;
   padding-top: 20px;
-	color:plum;
+	color:lightskyblue;
 }
 
 .main-menu ul {
@@ -389,11 +391,11 @@ ol {
 
 .main-menu ul li a {
   display: inline-block;
-  font-size: 18px;
+  font-size: 17px;
   color: #001418;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-right: 10px;
-  padding: 20px 0 5px;
+  padding: 20px 5px;
 }
 
 .header-btn {
@@ -642,6 +644,7 @@ height: 100%; width: 100%; padding: 20px;
 }
 .list{list-style: none;}
 .list li{float: left; width:33%; margin-bottom: 25px;}
+.carnet{border-radius: 20px;}
 /*------------------------
     Blog Page
 --------------------------*/
@@ -779,9 +782,8 @@ height: 100%; width: 100%; padding: 20px;
   .main-menu {
     position: absolute;
     background: #efefef;
-    width: 100%;
+    
     z-index: 999;
-    left: 0;
     top: 30px;
     padding-top: 15px;
     display: none;
