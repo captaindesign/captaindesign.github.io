@@ -14,7 +14,7 @@ body {
   height: 100%;
   font-family: 'dm mono', sans-serif;
 	max-width: 1340px;
-	margin: 0 auto; color: darkslategrey;
+	margin: 0 auto; color:dimgray;
 	}
 h1,
 h2,
@@ -812,7 +812,7 @@ height: 100%; width: 100%; padding: 20px;
     position: absolute;
     right: 25px;
     font-size: 30px;
-    color: #333;
+    color:orange;
     top: 35px;
     display: block;
   }
