@@ -13,8 +13,9 @@ html,
 body {
   height: 100%;
   font-family: 'dm mono', sans-serif;
-	max-width: 1340px;
-	margin: 0 auto; color:dimgray;
+	max-width: 1300px;
+	margin: 0 auto;
+	color:forestgreen;
 	}
 h1,
 h2,
@@ -459,6 +460,8 @@ ol {
   background-position: center center;
   position: relative;
   margin-bottom: 30px;
+  border-radius: 20px;
+	
 }
 .left {
   background-position: left center;
@@ -472,6 +475,7 @@ position: absolute;
 height: 100%; width: 100%; padding: 20px;	
 }
 .pi-style2{max-height: 430px;}
+
 .portfolio-it .pi-inner {
   position: absolute;
   width: 100%;
@@ -482,6 +486,7 @@ height: 100%; width: 100%; padding: 20px;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+	border-radius: 20px;
 }
 
 .portfolio-it .pi-inner h2 {
@@ -513,6 +518,7 @@ height: 100%; width: 100%; padding: 20px;
   background-position: center center;
   position: relative;
   margin-bottom: 30px;
+border-radius: 20px;
 }
 
 .portfolio-item .pi-inner {
@@ -543,6 +549,7 @@ height: 100%; width: 100%; padding: 20px;
 
 .portfolio-item:hover .pi-inner {
   background: rgba(0, 20, 24, 0.8);
+	
 }
 
 .portfolio-item:hover .pi-inner h2 {
