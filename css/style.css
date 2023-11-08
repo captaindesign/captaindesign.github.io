@@ -1,4 +1,4 @@
-/* =================================
+ /* =================================
 ------------------------------------
   Riddle - Portfolio
   Version: 1.0
@@ -16,6 +16,7 @@ body {
 	max-width: 1300px;
 	margin: 0 auto;
 	color:forestgreen;
+	padding: 0 10px;
 	}
 h1,
 h2,
@@ -36,6 +37,7 @@ p {
 }
 .texto{font-family: 'josefin sans', sans-serif;}
 p span{ color:darkseagreen;}
+.texto-projects{margin:0 auto;  text-align: left; margin-top: 50px;}
 .regular{font-weight: 300;}
 img {
   max-width:100%;
@@ -504,7 +506,7 @@ height: 100%; width: 100%; padding: 20px;
 }
 
 .portfolio-it:hover .pi-inner {
-  background: rgba(0, 20, 24, 0.8);
+  background: rgba(0, 20, 24, 0.7);
 }
 
 .portfolio-it:hover .pi-inner h2 {
@@ -531,6 +533,7 @@ border-radius: 20px;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+	border-radius: 20px;
 }
 
 .portfolio-item .pi-inner h2 {
@@ -548,7 +551,7 @@ border-radius: 20px;
 }
 
 .portfolio-item:hover .pi-inner {
-  background: rgba(0, 20, 24, 0.8);
+  background: rgba(0, 20, 24, 0.7);
 	
 }
 
@@ -771,6 +774,9 @@ border-radius: 20px;
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio-item {
     height: 450px;
+	  }
+	.html {
+    padding: 0 30px;
   }
 }
 
@@ -786,6 +792,7 @@ border-radius: 20px;
 
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
+	.texto-projects{padding:0 20px;}
   .body-pad {
     padding: 0 15px;
   }
@@ -836,6 +843,7 @@ border-radius: 20px;
 
 /* small Mobile :320px. */
 @media only screen and (max-width: 479px) {
+  
   .pi-style2{max-height: 330px;}
   .section-title {
     font-size: 30px;
