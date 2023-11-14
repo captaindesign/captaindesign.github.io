@@ -36,7 +36,11 @@ p {
 	font-family: 'DM mono', sans-serif;
 }
 .texto{font-family: 'josefin sans', sans-serif;}
-p span{ color:darkseagreen;}
+.verde{ color:darkseagreen;}
+.agua{color:#37B773}
+.naranja{ color:orange;}
+.amarillo{ color:yellow;}
+.purple{color:mediumpurple;}
 .texto-projects{margin:0 auto;  text-align: left; margin-top: 50px;}
 .regular{font-weight: 300;}
 img {
@@ -773,7 +777,7 @@ border-radius: 20px;
 /* Medium screen : 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio-item {
-    height: 450px;
+    
 	  }
 	.html {
     padding: 0 30px;
@@ -786,7 +790,7 @@ border-radius: 20px;
     padding: 0 30px;
   }
   .portfolio-item {
-    height: 350px;
+    height: 430px;
   }
 }
 
