@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54379529-1"></script>
 <script>
@@ -10,7 +9,20 @@
 
   gtag('config', 'UA-54379529-1');
 </script>
-
+	
+<script>
+    var colors = ["black", "white"];
+    var colorIndex = 0;
+    function changeColor() {
+        var col = document.getElementById("body");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+    }
+</script>
+	
 	<title>love-based design Ⓥ</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="captain design - portfolio">
@@ -35,7 +47,7 @@
 	<![endif]-->
 
 </head>
-<body>
+<body id='body'>
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
@@ -51,7 +63,7 @@
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-9">
-					<a href="" class="site-btn header-btn">Español</a>
+					<button class="site-btn header-btn" onclick="changeColor();">Dark / Light</button>
 					<nav class="main-menu">
 						<ul>
 							<li><a href="aboutme.html">About Me</a></li>
@@ -204,7 +216,7 @@
 			<div class="social-links">
 				<a href="http://behance.net/capitan" target="_blank"><span class="fa fa-behance"></span></a>
 				<a href="https://www.linkedin.com/in/joselegato/" target="_blank"><span class="fa fa-linkedin"></span></a>
-				<a href="https://www.instagram.com/joe_verdura/" target="_blank"><span class="fa fa-instagram"></span></a>
+				<a href="https://www.instagram.com/joe_plantbased/" target="_blank"><span class="fa fa-instagram"></span></a>
 				<a href="mailto:venganzadelcapitan@gmail.com" target="_blank"><span class="fa fa-envelope-o"></span></a>
 			</div>
 			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
